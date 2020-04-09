@@ -1,4 +1,3 @@
-
 body {
     font-family: "Oxygen", sans-serif;
     font-size: 16px;
@@ -11,6 +10,11 @@ body {
 
 h1 {
     font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -84,15 +88,16 @@ header {
 
 #learn .image-container {
     width: 60%;
-    overflow: hidden;
-    padding-left: 24px;
-    padding-right: 24px;
+    overflow: hidden;   
 }
 
 #learn .image-container img {
     max-width: 100%;
     height: auto;
     vertical-align: top;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 #learn .text-container {
@@ -121,20 +126,25 @@ header {
 
 #practice {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 #practice .left-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
     width: 60%;
-    overflow: hidden;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 #practice .left-container img {
     max-width: 100%;
     vertical-align: top;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;  
+}
+
+#practice .left-container .text-container {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 #practice h1 {
@@ -148,12 +158,101 @@ header {
     width: 80%;
     font-size: 1.5rem;
     font-weight: 300;
+    width: auto;
 }
 
 #practice .right-container {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    border-left: 1px solid gainsboro; 
     width: 40%;
+    box-sizing: border-box;
+
 }
 
-#practice .right-container .content-block {
-    display: inline-flex;
+#practice .content-block {
+    display: flex;
+    align-items: center;
+    border: 1px solid gainsboro;
+}
+
+#practice .content-block .image-container {
+    width: 35%;
+    padding: 16px;
+}
+
+#practice .content-block img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+#practice .content-block .text-container {
+    width: 65%;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+#practice .content-block h2 {
+    line-height: 1.6;
+}
+
+#practice .content-block p {
+    padding: 8px 0 8px 0;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+#practice .content-block a {
+    color: rgb(0,0,238);
+    font-size: 1.2rem;
+}
+
+#start-learn {
+    padding: 32px 56px 32px 56px; 
+    background-color: gainsboro;
+}
+
+#start-learn .header{
+    text-align: center;
+    line-height: 1.6;
+}
+
+#start-learn .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#start-learn .gallery-block {
+    padding: 32px 16px 0 16px;
+    background-color: white;
+    background-clip: content-box;
+}
+
+#start-learn .gallery .image-container {
+    width: 532px;
+}
+
+#start-learn .gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+#start-learn .gallery .text-container {
+    padding-left: 16px;
+}
+
+#start-learn h2 {
+    padding-top: 16px;
+    line-height: 1.6;
+}
+
+#start-learn h5 {
+    padding-top: 8px;
+    line-height: 1.6;
+}
+
+#start-learn p {
+    padding-top: 8px;
+    padding-bottom: 24px;
 }
