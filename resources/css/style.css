@@ -54,6 +54,12 @@ header {
 
 .header-content li {
     padding-left: 16px;
+    transition: all 0.1s  0;
+}
+
+.header-content li:hover {
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .header-content .title-logo {
@@ -116,12 +122,21 @@ header {
 }
 
 #learn .text-container .button {
+    height: 32px;
+    box-sizing: border-box;
     background-color: dimgray;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 2px;
     text-align: center;
-    color: gainsboro;
+    color: white;
+    transition: all 0.5s linear 0.1s;
+}
+
+#learn .text-container .button:hover {
+    background-color: white;
+    border: 1px solid rgb(68, 68, 68);
+    color: rgb(68, 68, 68);
 }
 
 #practice {
@@ -175,6 +190,12 @@ header {
     align-items: center;
     border: 1px solid gainsboro;
     padding: 16px;
+    transition: all 0.1s linear;
+}
+
+#practice .content-block:hover {
+    background-color: gainsboro;
+    border-color: rgb(68, 68, 68);
 }
 
 #practice .content-block .image-container {
@@ -233,6 +254,11 @@ header {
     box-sizing: border-box;
     width: 30%;
     max-width: 532px;
+    transition: all 0.2s ease-out 0.1s;
+}
+
+#start-learn .gallery-block:hover {
+    transform: scale(1.05);
 }
 
 #start-learn .gallery img {
@@ -299,6 +325,7 @@ header {
 
 #thesis .right-container {
     width: 40%;
+    border-left: 1px solid gainsboro; 
 }
 
 #thesis .content-block {
@@ -306,7 +333,13 @@ header {
     align-items: center;
     box-sizing: border-box;
     padding: 16px;
+    border: 1px solid gainsboro;
+    transition: all 0.1s linear;
+}
+
+#thesis .content-block:hover {
     background-color: gainsboro;
+    border: 1px solid rgb(68, 68, 68);
 }
 
 #thesis .content-block .image-container {
