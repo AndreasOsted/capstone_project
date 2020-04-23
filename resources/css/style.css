@@ -406,7 +406,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px), (max-resolution: 299gidpi) {
     .header-mobile {
         display: none;
     }
@@ -417,7 +417,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px), 
-    (orientation: portrait), 
     (min-resolution: 300dpi) {
 
     h1 {
