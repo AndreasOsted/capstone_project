@@ -47,17 +47,17 @@ header {
     padding-bottom: 16px;
 }
 
-.header-content nav ul {
+.header-content nav.desktop ul {
     display: inline-flex;
     padding-right: 24px;
 }
 
-.header-content li {
+.header-content nav.desktop li {
     padding-left: 16px;
-    transition: all 0.1s  0;
+    transition: all 0.1s linear 0;
 }
 
-.header-content li:hover {
+.header-content nav.desktop li:hover {
     font-weight: 700;
     text-decoration: underline;
 }
@@ -65,7 +65,7 @@ header {
 .header-content .title-logo {
     flex: 1;
     padding-left: 24px;
-    font-size: 1.3rem;
+    font-size: 1.75rem;
     letter-spacing: 1.5px;
 }
 
@@ -113,7 +113,11 @@ header {
     width: 30%;
 }
 
-#learn h1, #learn h3 {
+#learn .text-container h1 {
+    padding-bottom: 24px;
+}
+
+#learn .text-container h3 {
     padding-bottom: 24px;
 }
 
@@ -130,7 +134,7 @@ header {
     border-radius: 2px;
     text-align: center;
     color: white;
-    transition: all 0.5s linear 0.1s;
+    transition: all 0.2s linear 0.1s;
 }
 
 #learn .text-container .button:hover {
@@ -254,6 +258,7 @@ header {
     box-sizing: border-box;
     width: 30%;
     max-width: 532px;
+    min-width: 320px;
     transition: all 0.2s ease-out 0.1s;
 }
 
@@ -378,11 +383,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 300;
+    font-size: 0.8rem;
 }
 
 .footer-content p {
     flex: 1;
-    font-weight: 300;
 }
 
 .footer-content ul {
@@ -391,5 +397,77 @@ footer {
 
 .footer-content a {
     padding-left: 16px;
+    transition: all 0.1s linear 0;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+@media only screen and (min-width: 769px) {
+    .header-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-content {
+        display: none;
+    }
+
+    .header-mobile ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 64px;
+    }
+
+    #learn {
+        display: inline-block;
+        padding: 0;
+    }
+
+    #learn .image-container {
+        width: 100%;
+    }
+
+    #learn .image-container img {
+        padding: 0;
+    }
+
+    #learn .text-container {
+        width: 100%;
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    #learn .text-container h1 {
+        padding-bottom: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #learn .text-container h3 {
+        padding-bottom: 24px;
+    }
+
+    #learn .text-container a {
+        margin: 0 auto;
+    }
+
+    #practice .left-container {
+        display: none;
+    }
+
+    #practice .right-container {
+        width: 100%;
+    }
+
+    #practice .right-container .content-block {
+        display: block;
+    }
 }
 
