@@ -406,7 +406,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 769px), (max-resolution: 299gidpi) {
+@media only screen and (min-width: 769px) and (max-resolution: 299dpi) {
     .header-mobile {
         display: none;
     }
